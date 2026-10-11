@@ -444,6 +444,9 @@
      5. FILTER BAR RENDERER
      ========================================================================== */
 
+  // Destination from a Date label, e.g. "31 Oct 26 (Sat) - Phuket / With Fah" -> "Phuket"
+  const placeOf = date => date.split(' - ').slice(1).join(' - ').replace(/\s*\/.*$/, '').trim();
+
   function renderFilterBar() {
     elements.filterBar.innerHTML = '';
 
@@ -451,7 +454,6 @@
 
     if (state.activeSection === 'itinerary-section') {
       const dateOf = item => (item.Date || item.Day || '').trim();
-      const placeOf = date => date.split(' - ').slice(1).join(' - ').replace(/\s*\/.*$/, '').trim();
       const dates = [...new Set(state.itinerary.map(dateOf).filter(Boolean))];
       const places = [...new Set(dates.map(placeOf).filter(Boolean))];
       const hasHighlights = state.itinerary.some(item => HIGHLIGHT_ITINERARY_IMAGES.has((item.Image || '').trim()));
