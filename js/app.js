@@ -451,7 +451,7 @@
 
     if (state.activeSection === 'itinerary-section') {
       const dateOf = item => (item.Date || item.Day || '').trim();
-      const placeOf = date => date.split(' - ').slice(1).join(' - ').trim();
+      const placeOf = date => date.split(' - ').slice(1).join(' - ').replace(/\s*\/.*$/, '').trim();
       const dates = [...new Set(state.itinerary.map(dateOf).filter(Boolean))];
       const places = [...new Set(dates.map(placeOf).filter(Boolean))];
       const hasHighlights = state.itinerary.some(item => HIGHLIGHT_ITINERARY_IMAGES.has((item.Image || '').trim()));
@@ -528,7 +528,7 @@
     if (loc === 'HIGHLIGHT') {
       filtered = filtered.filter(item => HIGHLIGHT_ITINERARY_IMAGES.has((item.Image || '').trim()));
     } else if (loc !== 'ALL') {
-      filtered = filtered.filter(item => (item.Date || item.Day || '').trim().endsWith(' - ' + loc));
+      filtered = filtered.filter(item => placeOf((item.Date || item.Day || '').trim()) === loc);
       if (state.activeItineraryFilter !== 'ALL') {
         filtered = filtered.filter(item => (item.Date || item.Day) === state.activeItineraryFilter);
       }
