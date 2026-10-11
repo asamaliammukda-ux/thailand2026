@@ -1,0 +1,199 @@
+{
+  "checklist_sections": [
+    {
+      "category_id": "prep",
+      "category_name": "เอกสาร & การเตรียมตัวเดินทาง (Travel Prep & Documents)",
+      "groups": [
+        {
+          "group_name": "เอกสารสำคัญ & ข้อกำหนดเข้าเมืองฮ่องกงและจีน",
+          "items": [
+            {
+              "id": "chk_passport",
+              "task": "หนังสือเดินทาง (Passport เล่มจริง อายุใช้งานเหลือมากกว่า 6 เดือน)",
+              "time_note": "ตรวจสอบก่อนเดินทาง 30 วัน",
+              "channel_note": "กรมการกงสุล กระทรวงการต่างประเทศ",
+              "badge_text": "Critical",
+              "badge_type": "danger"
+            },
+            {
+              "id": "chk_visa_free",
+              "task": "ตรวจสอบสิทธิ์ฟรีวีซ่าไทย-ฮ่องกง 30 วัน & ฟรีวีซ่าไทย-จีนถาวร",
+              "time_note": "ก่อนบิน 7 วัน",
+              "channel_note": "ข้อตกลงยกเว้นวีซ่า",
+              "badge_text": "Required",
+              "badge_type": "danger"
+            },
+            {
+              "id": "chk_insurance",
+              "task": "ทำประกันการเดินทางต่างประเทศ (ครอบคลุมค่ารักษาและสัมภาระ)",
+              "time_note": "ซื้อก่อนเดินทาง 14 วัน",
+              "channel_note": "Travel Insurance Policy",
+              "badge_text": "High Priority",
+              "badge_type": "warning"
+            },
+            {
+              "id": "chk_octopus_card",
+              "task": "บัตร Octopus Card หรือเตรียม Apple Pay / บัตรเครดิตสำหรับแตะขึ้น MTR ฮ่องกง",
+              "time_note": "ติดตั้งในโทรศัพท์ล่วงหน้า",
+              "channel_note": "Octopus App / MTR Transit",
+              "badge_text": "High Priority",
+              "badge_type": "warning"
+            }
+          ]
+        },
+        {
+          "group_name": "การเงิน & แอปพลิเคชันที่ต้องมี (Hong Kong & Shenzhen)",
+          "items": [
+            {
+              "id": "chk_alipay_wechat",
+              "task": "ผูกบัตรเครดิต / Travel Card (YouTrip, Boarding Card) กับ Alipay & WeChat Pay สำหรับเซินเจิ้น",
+              "time_note": "ยืนยันตัวตนก่อนเดินทาง 7 วัน",
+              "channel_note": "Alipay & WeChat Pay App",
+              "badge_text": "Critical",
+              "badge_type": "danger"
+            },
+            {
+              "id": "chk_esim_roaming",
+              "task": "สั่งซื้อและติดตั้ง eSIM Hong Kong & China Unlimited Data (เปิด Roaming เล่น LINE/FB/IG ได้)",
+              "time_note": "เปิดใช้งานเมื่อถึงสนามบินนานาชาติฮ่องกง (HKG)",
+              "channel_note": "eSIM Hong Kong & China Unlimited",
+              "badge_text": "High Priority",
+              "badge_type": "warning"
+            },
+            {
+              "id": "chk_map_didi",
+              "task": "ติดตั้งและตั้งค่าแอปแผนที่ (Map) & DiDi สำหรับนำทางและเรียกแท็กซี่/รถรับจ้าง",
+              "time_note": "ก่อนเดินทาง 3 วัน",
+              "channel_note": "Map / DiDi Mini Program",
+              "badge_text": "Recommended",
+              "badge_type": "info"
+            },
+            {
+              "id": "chk_cash_hkd_cny",
+              "task": "แลกเงินสดสำรอง HKD (ดอลลาร์ฮ่องกง) และ CNY (หยวนจีน)",
+              "time_note": "ก่อนเดินทาง 5 วัน",
+              "channel_note": "SuperRich / ธนาคารพาณิชย์",
+              "badge_text": "Recommended",
+              "badge_type": "info"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "bookings",
+      "category_name": "การจองเที่ยวบิน โรงแรม & ตั๋วโดยสาร (Bookings & Tickets)",
+      "groups": [
+        {
+          "group_name": "เที่ยวบิน & โรงแรมที่พัก",
+          "items": [
+            {
+              "id": "chk_flight_outbound",
+              "task": "เที่ยวบินขาไป BKK ✈ HKG (Bangkok -> Hong Kong)",
+              "time_note": "3 ต.ค. 2026 @ 08:40 AM - 11:45 PM (+1)",
+              "channel_note": "สนามบินนานาชาติฮ่องกง (HKG)",
+              "badge_text": "Confirmed",
+              "badge_type": "success"
+            },
+            {
+              "id": "chk_hotel_tst",
+              "task": "โรงแรมที่พักย่านจิมซาจุ่ย (Tsim Sha Tsui, Kowloon)",
+              "time_note": "เช็คอิน 3 ต.ค. 2026 (พักผ่อน 3 คืน)",
+              "channel_note": "ที่พักใจกลางย่าน TST",
+              "badge_text": "Confirmed",
+              "badge_type": "success"
+            },
+            {
+              "id": "chk_flight_inbound",
+              "task": "เที่ยวบินขากลับ HKG ✈ BKK (Hong Kong -> Bangkok)",
+              "time_note": "6 ต.ค. 2026 @ 07:05 PM - 09:45 PM",
+              "channel_note": "สนามบินนานาชาติฮ่องกง (HKG)",
+              "badge_text": "Confirmed",
+              "badge_type": "success"
+            }
+          ]
+        },
+        {
+          "group_name": "ตั๋วเข้าชมสถานที่ & การเดินทางข้ามแดน",
+          "items": [
+            {
+              "id": "chk_high_speed_rail",
+              "task": "ตั๋วรถไฟความเร็วสูง HK West Kowloon ⇄ Futian Station (Shenzhen)",
+              "time_note": "เดินทาง 4 ต.ค. 2026 @ 10:00 AM / กลับ 09:20 PM",
+              "channel_note": "12306 China Railway / Trip.com",
+              "badge_text": "High Priority",
+              "badge_type": "warning"
+            },
+            {
+              "id": "chk_peak_tram_ticket",
+              "task": "บัตรโดยสารรถราง The Peak Tram & จุดชมวิว Sky Terrace 428",
+              "time_note": "เข้าชม 6 ต.ค. 2026 @ 11:10 AM",
+              "channel_note": "Klook / The Peak Official",
+              "badge_text": "Booked",
+              "badge_type": "success"
+            },
+            {
+              "id": "chk_star_ferry",
+              "task": "บัตร Star Ferry หรือเตรียมเหรียญ/บัตร Octopus สำหรับล่องเรือข้ามอ่าววิคตอเรีย",
+              "time_note": "เดินทาง 6 ต.ค. 2026 @ 10:10 AM",
+              "channel_note": "Star Ferry Pier",
+              "badge_text": "Ready",
+              "badge_type": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "packing",
+      "category_name": "สัมภาระ & สิ่งของจำเป็น (Packing & Essentials)",
+      "groups": [
+        {
+          "group_name": "อุปกรณ์เครื่องแต่งกาย & ของใช้",
+          "items": [
+            {
+              "id": "chk_walking_shoes",
+              "task": "รองเท้าผ้าใบเดินสบายซัพพอร์ตเท้า (เนื่องจากเดินเยอะในฮ่องกง & เซินเจิ้น)",
+              "time_note": "เตรียมพร้อมก่อนแพ็กกระเป๋า",
+              "channel_note": "จำเป็นมากสำหรับการเดินทางในเมือง",
+              "badge_text": "High Priority",
+              "badge_type": "warning"
+            },
+            {
+              "id": "chk_adapter",
+              "task": "หัวแปลงปลั๊กไฟ Universal Adapter (ฮ่องกงใช้ปลั๊กขาเหลี่ยม Type G / จีน Type A, I)",
+              "time_note": "พกติดตัวในกระเป๋าเดินทาง",
+              "channel_note": "Universal Travel Adapter",
+              "badge_text": "Critical",
+              "badge_type": "danger"
+            },
+            {
+              "id": "chk_powerbank",
+              "task": "Power Bank (ความจุไม่เกิน 20,000 mAh มีตัวเลขระบุชัดเจนตามกฎการบินสากล)",
+              "time_note": "พกพาขึ้นเครื่อง ห้ามโหลดใต้เครื่อง",
+              "channel_note": "ข้อกำหนดความปลอดภัยการท่าอากาศยาน",
+              "badge_text": "Required",
+              "badge_type": "danger"
+            },
+            {
+              "id": "chk_light_jacket",
+              "task": "เสื้อคลุม/แจ็กเก็ตบาง (เผื่อห้องแอร์ในห้างหรือช่วงลมพัดริมอ่าววิคตอเรีย)",
+              "time_note": "พกติดตัวขณะท่องเที่ยว",
+              "channel_note": "สภาพอากาศฤดูใบไม้ร่วง 24-28°C",
+              "badge_text": "Recommended",
+              "badge_type": "info"
+            },
+            {
+              "id": "chk_medicine",
+              "task": "ยาประจำตัว ยาแก้ปวด ยาแก้ท้องเสีย และพลาสเตอร์ยาแก้รองเท้ากัด",
+              "time_note": "พกขนาดสำหรับเดินทาง",
+              "channel_note": "กระเป๋ายาปฐมพยาบาล",
+              "badge_text": "Recommended",
+              "badge_type": "info"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
