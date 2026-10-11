@@ -658,6 +658,27 @@
      7. RESTAURANTS RENDERER (CARDS GRID/LIST)
      ========================================================================== */
 
+  // Options column: "Name|map url||Name|map url" -> alternative places to eat for the same stop
+  function optionsHTML(raw) {
+    const opts = (raw || '').split('||').map(s => s.trim()).filter(Boolean).map(s => {
+      const [name, url] = s.split('|').map(x => (x || '').trim());
+      return { name, url };
+    }).filter(o => o.name);
+    if (!opts.length) return '';
+    return `
+      <div class="restaurant-options-block">
+        <span class="restaurant-block-label">🍽️ ตัวเลือกร้าน (เลือกกินร้านไหนก็ได้):</span>
+        <ul class="restaurant-options-list">
+          ${opts.map(o => `
+            <li>
+              <span class="restaurant-option-name">${escapeHTML(o.name)}</span>
+              ${o.url ? `<a href="${escapeHTML(o.url)}" target="_blank" rel="noopener noreferrer" class="amap-pill-btn" title="Open Map">Map</a>` : ''}
+            </li>`).join('')}
+        </ul>
+      </div>
+    `;
+  }
+
   function renderRestaurants() {
     let filtered = state.restaurants;
 
@@ -751,6 +772,8 @@
                 <p class="restaurant-menu-text">${escapeHTML(menuText)}</p>
               </div>
               ` : ''}
+
+              ${optionsHTML(item.Options)}
 
               ${storyText !== '' ? `
               <div class="restaurant-story-block">

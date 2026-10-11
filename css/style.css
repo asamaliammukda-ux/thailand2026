@@ -1210,6 +1210,46 @@ body {
   color: #0F172A;
 }
 
+/* Alternative places to eat for one stop */
+.restaurant-options-block {
+  background: var(--bg-card-darker);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 0.95rem;
+}
+
+[data-theme="light"] .restaurant-options-block {
+  background: #F1F5F9;
+  border-color: rgba(203, 213, 225, 0.8);
+}
+
+.restaurant-options-list {
+  list-style: none;
+  margin: 0.35rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.restaurant-options-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.restaurant-option-name {
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+[data-theme="light"] .restaurant-option-name {
+  color: #0F172A;
+}
+
 /* Story / History Block (Collapsible) */
 .restaurant-story-block {
   margin-bottom: 0.15rem;
