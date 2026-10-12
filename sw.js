@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hk-trip-v33';
+const CACHE_NAME = 'hk-trip-v34';
 
 const PRECACHE_URLS = [
   './',
