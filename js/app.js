@@ -626,7 +626,7 @@
             ${imageHTML}
             <div class="timeline-card-content">
               <div class="timeline-card-meta">
-                <span class="time-pill">${escapeHTML(item.Time)}</span>
+                ${(item.Time || '').trim() && item.Time.trim() !== '-' ? `<span class="time-pill">${escapeHTML(item.Time)}</span>` : ''}
                 ${hasTimeSpent ? `
                 <span class="duration-pill">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
