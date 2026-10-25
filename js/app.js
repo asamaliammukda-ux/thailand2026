@@ -259,7 +259,7 @@
         </div>
         <div class="budget-summary-card card-cny">
           <div class="summary-top"><span class="summary-label">Est. Budget</span></div>
-          <div class="summary-amount">฿${totalTHB.toLocaleString('th-TH', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</div>
+          <div class="summary-amount">฿${totalTHB.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</div>
         </div>
       `;
     }
@@ -667,7 +667,7 @@
     if (!opts.length) return '';
     return `
       <div class="restaurant-options-block">
-        <span class="restaurant-block-label">🍽️ ตัวเลือกร้าน (เลือกกินร้านไหนก็ได้):</span>
+        <span class="restaurant-block-label">🍽️ Where to eat (pick any option):</span>
         <ul class="restaurant-options-list">
           ${opts.map(o => `
             <li>
@@ -762,13 +762,13 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                <span><strong>วันที่แนะนำ:</strong> ${escapeHTML(recommendedDayText)}</span>
+                <span><strong>Recommended day:</strong> ${escapeHTML(recommendedDayText)}</span>
               </div>
               ` : ''}
 
               ${menuText !== '' ? `
               <div class="restaurant-menu-block">
-                <span class="restaurant-block-label">⭐ เมนูแนะนำห้ามพลาด:</span>
+                <span class="restaurant-block-label">⭐ Must-try dishes:</span>
                 <p class="restaurant-menu-text">${escapeHTML(menuText)}</p>
               </div>
               ` : ''}
@@ -779,7 +779,7 @@
               <div class="restaurant-story-block">
                 <details class="restaurant-story-details">
                   <summary class="restaurant-story-summary">
-                    <span>🏛️ จุดเด่น & ความนิยม</span>
+                    <span>🏛️ Highlights & popularity</span>
                     <svg class="details-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
@@ -872,7 +872,7 @@
             <span class="summary-label">Total Estimated (THB)</span>
             <span class="currency-badge thb">THB (฿)</span>
           </div>
-          <div class="summary-amount">฿${totalTHB.toLocaleString('th-TH', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</div>
+          <div class="summary-amount">฿${totalTHB.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</div>
           <div class="summary-note">Thai Baht total estimated expenditure</div>
         </div>
 
@@ -936,7 +936,7 @@
             <span class="budget-type-badge ${badgeClass}">${escapeHTML(item.Type)}</span>
           </td>
           <td class="budget-price-thb">
-            ฿${priceTHB.toLocaleString('th-TH')}
+            ฿${priceTHB.toLocaleString('en-US')}
           </td>
           <td class="budget-price-cny">
             ¥${priceCNY.toLocaleString('zh-CN')}
@@ -971,7 +971,7 @@
           <div class="mobile-card-prices">
             <div class="price-chip-thb">
               <span class="price-label">THB</span>
-              <span class="price-val">฿${priceTHB.toLocaleString('th-TH')}</span>
+              <span class="price-val">฿${priceTHB.toLocaleString('en-US')}</span>
             </div>
             <div class="price-chip-cny">
               <span class="price-label">CNY</span>
