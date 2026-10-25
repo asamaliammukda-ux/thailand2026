@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Thailand Grand Journey 2026 • Personal Trip Planner</title>
-  <meta name="description" content="Personal trip itinerary, dining guide, and travel checklist for Thailand 2026 Grand Expedition.">
+  <meta name="description" content="Personal trip itinerary and dining guide for Thailand 2026 Grand Expedition.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧳</text></svg>">
   <meta property="og:title" content="Thailand Grand Journey 2026">
-  <meta property="og:description" content="Personal trip itinerary, dining guide, and travel checklist for Thailand 2026 Grand Expedition.">
+  <meta property="og:description" content="Personal trip itinerary and dining guide for Thailand 2026 Grand Expedition.">
   <meta property="og:image" content="images/hero-bg.jpg">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#F59E0B">
@@ -117,18 +117,6 @@
           </svg>
           Restaurants
         </button>
-        <button class="nav-tab-btn" data-target="budget-section" role="tab" aria-selected="false">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-          </svg>
-          Budget
-        </button>
-        <button class="nav-tab-btn" data-target="checklist-section" role="tab" aria-selected="false">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          Checklist
-        </button>
       </div>
 
       <!-- Nav Controls (Search) -->
@@ -137,7 +125,7 @@
           <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
-          <input type="text" id="searchInput" class="search-input" placeholder="Search itinerary, dining, budget...">
+          <input type="text" id="searchInput" class="search-input" placeholder="Search itinerary and dining...">
         </div>
       </div>
     </nav>
@@ -228,60 +216,6 @@
 
       <div class="restaurants-grid" id="restaurants-grid-wrapper">
         <!-- Rendered dynamically from restaurants.json -->
-      </div>
-    </section>
-
-    <!-- 3. BUDGET SECTION -->
-    <section id="budget-section" class="content-section" style="display: none;">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">
-            <svg class="section-title-icon" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
-            </svg>
-            Trip Budget & Expense Calculator
-          </h2>
-          <p class="section-subtext">Estimated expenses in Thai Baht (THB) & Chinese Yuan (CNY)</p>
-        </div>
-      </div>
-
-      <div id="budget-container">
-        <!-- Rendered dynamically from budget.csv -->
-      </div>
-    </section>
-
-    <!-- 4. CHECKLIST SECTION -->
-    <section id="checklist-section" class="content-section" style="display: none;">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">
-            <svg class="section-title-icon" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-            </svg>
-            Pre-Departure Checklist & Bookings
-          </h2>
-          <p class="section-subtext">Track documents, currency, transit passes, and hotel reservations</p>
-        </div>
-      </div>
-
-      <!-- Real-time Progress Bar Card -->
-      <div class="checklist-progress-card">
-        <div class="progress-info">
-          <span class="progress-text">
-            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: var(--accent-gold);">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            Preparation Progress
-          </span>
-          <span class="progress-percentage" id="checklistProgressText">0 / 0 Completed (0%)</span>
-        </div>
-        <div class="progress-bar-bg">
-          <div class="progress-bar-fill" id="checklistProgressBar"></div>
-        </div>
-      </div>
-
-      <div class="checklist-categories-grid" id="checklist-container">
-        <!-- Rendered dynamically from checklist.json -->
       </div>
     </section>
 

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hk-trip-v41';
+const CACHE_NAME = 'hk-trip-v42';
 
 const PRECACHE_URLS = [
   './',
@@ -9,8 +9,6 @@ const PRECACHE_URLS = [
   './data/trip-info.json',
   './data/itinerary.csv',
   './data/restaurants.csv',
-  './data/budget.csv',
-  './data/checklist.json',
   './images/hero-bg.jpg'
 ];
 
