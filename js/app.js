@@ -478,12 +478,16 @@
       addRow('Destination',
         [['ALL', 'All Days'], ...(hasHighlights ? [['HIGHLIGHT', 'Highlights']] : []), ...places.map(p => [p, p])],
         v => v === loc,
-        v => { state.activeLocation = v; state.activeItineraryFilter = 'ALL'; });
+        v => {
+          state.activeLocation = v;
+          // a destination opens on its first day; days are browsed one at a time
+          state.activeItineraryFilter = dates.find(d => placeOf(d) === v) || 'ALL';
+        });
 
       if (loc !== 'ALL' && loc !== 'HIGHLIGHT') {
         const days = dates.filter(d => placeOf(d) === loc);
         addRow('Day',
-          [['ALL', `All ${loc}`], ...days.map(d => [d, d.split(' - ')[0].replace(' 26', '')])],
+          days.map(d => [d, d.split(' - ')[0].replace(' 26', '')]),
           v => v === state.activeItineraryFilter,
           v => { state.activeItineraryFilter = v; });
       }
